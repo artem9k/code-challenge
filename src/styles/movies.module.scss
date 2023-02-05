@@ -1,0 +1,78 @@
+$darker_grey:  #121212;
+$dark_grey: #1a1a1a;
+$grey: #1f1f1f;
+
+.header_wrap {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+// content stack for index page
+.content_background {
+    width: 90%;
+    min-height: 100vh;
+    padding: 10px 0;
+    justify-content: center;
+    margin: auto;
+
+    .content_wrap {
+        background: $darker_grey;
+        width: 100%;
+        display: flex;
+        padding: 30px 0;
+
+        .content_list {
+            display: flex;
+            flex-wrap: wrap; 
+            padding-right: 40px;
+            padding-left: 40px; 
+            justify-content: center;
+        }
+    }
+}
+
+.movie_card_small_wrap {
+    width: 200px;
+    margin: 10px;
+
+    .movie_card_img {
+        display: block;
+    }
+
+    .text_box {
+        background: $dark_grey;
+        height: 125px;
+        font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+        .imdb_rating {
+            padding: 10px 10px;
+            display: flex;
+            height: 35px;
+            color: lightblue;
+        }
+        
+        .title {
+            padding: 10px 10px;
+            display: flex;
+            height: 50px
+        }
+        
+        .year_rating {
+            padding: 10px 10px;
+        
+            .movie_year {
+                color: 'grey';
+                width: 50px;
+                float: left
+            }
+        
+            .movie_rating {
+                color: 'grey';
+                float: right;
+            }
+        }
+    }
+}
+
